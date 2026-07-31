@@ -1143,34 +1143,10 @@
       "bild": ""
     },
     {
-      "name": "Wasserfallsteig (Todtnauer Wasserfall)",
-      "ort": "Todtnauberg",
-      "kategorie": "Wanderweg",
-      "hund": "ja",
-      "lage": "draußen",
-      "preis": "",
-      "stimmung": [
-        "Natur",
-        "abenteuerlich",
-        "beeindruckend"
-      ],
-      "passend_fuer": [
-        "alleine",
-        "zu_zweit",
-        "hund"
-      ],
-      "beschreibung": "12 Kilometer langer Wanderweg vom Feldberg bis Todtnauberg vorbei an mehreren Wasserfällen, darunter der 97 Meter hohe Todtnauer Wasserfall.",
-      "adresse": "",
-      "bildquelle": "pexels",
-      "bild_fotograf": "Daniel Adner",
-      "bild_quelle_url": "https://www.pexels.com/photo/serene-wooden-path-through-autumn-forest-36752961/",
-      "bild": "bilder/Wasserfallsteig-Todtnauer-Wasserfall.jpg"
-    },
-    {
       "name": "Wasserfallsteig",
       "ort": "Feldberg - Todtnauberg",
       "kategorie": "Wanderweg",
-      "hund": "nein",
+      "hund": "ja",
       "lage": "draußen",
       "preis": "",
       "stimmung": [
@@ -1180,14 +1156,15 @@
       ],
       "passend_fuer": [
         "alleine",
-        "zu_zweit"
+        "zu_zweit",
+        "hund"
       ],
       "beschreibung": "12 Kilometer langer Wanderweg vom Feldberg bis Todtnauberg, vorbei an mehreren Wasserfällen, darunter der 97 Meter hohe Todtnauer Wasserfall.",
       "adresse": "",
-      "bildquelle": "",
-      "bild_fotograf": "",
-      "bild_quelle_url": "",
-      "bild": ""
+      "bildquelle": "pexels",
+      "bild_fotograf": "Daniel Adner",
+      "bild_quelle_url": "https://www.pexels.com/photo/serene-wooden-path-through-autumn-forest-36752961/",
+      "bild": "bilder/Wasserfallsteig.jpg"
     },
     {
       "name": "Wasserschloss Inzlingen",
