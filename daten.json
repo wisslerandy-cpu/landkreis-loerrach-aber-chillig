@@ -1,51 +1,372 @@
 {
-  "hinweis": "Platzhalter-Datensatz. Wird von Jarvis (unternehmungen_export-Tool) regelmäßig durch die echten Vault-Einträge ersetzt.",
+  "hinweis": "Automatisch von Jarvis (unternehmungen_export) aus dem Vault generiert.",
   "stand": "2026-07-31",
   "eintraege": [
+    {
+      "name": "Ackermannshof",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "traditionell",
+        "gemütlich"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Pavel Danilyuk",
+      "bild_quelle_url": "https://www.pexels.com/photo/dining-table-and-chairs-set-5706134/",
+      "bild": "bilder/Ackermannshof.jpg"
+    },
+    {
+      "name": "AdventureRooms Basel Escape Room",
+      "ort": "Basel",
+      "kategorie": "Escape Room",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Spannung",
+        "Rätsel",
+        "Team-Erlebnis"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Escape-Room-Erlebnis in Basel, beliebt als Ausflugsziel für Gruppen aus der Region Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Animesh Srivastava",
+      "bild_quelle_url": "https://www.pexels.com/photo/photo-of-an-exit-signage-8236056/",
+      "bild": "bilder/AdventureRooms-Basel-Escape-Room.jpg"
+    },
+    {
+      "name": "Amore Amore",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "romantisch",
+        "kulinarisch",
+        "gemütlich"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Irene Ästhetik",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-symmetrical-pink-petals-on-neutral-background-32093662/",
+      "bild": "bilder/Amore-Amore.jpg"
+    },
+    {
+      "name": "Aqualon Therme",
+      "ort": "Lörrach",
+      "kategorie": "Therme/Wellness",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Entspannung",
+        "Wellness",
+        "Familienfreundlich"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "alleine"
+      ],
+      "beschreibung": "Therme in Lörrach mit Bade- und Wellnessangeboten für Familien und Erholungssuchende.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "cottonbro studio",
+      "bild_quelle_url": "https://www.pexels.com/photo/topless-elderly-man-sitting-inside-the-sauna-7224676/",
+      "bild": "bilder/Aqualon-Therme.jpg"
+    },
+    {
+      "name": "Au Lion d'Or - Chez Théo",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "elegant",
+        "kulinarisch",
+        "romantisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Pavel Danilyuk",
+      "bild_quelle_url": "https://www.pexels.com/photo/dining-table-and-chairs-set-5706134/",
+      "bild": "bilder/Au-Lion-dOr-Chez-Tho.jpg"
+    },
+    {
+      "name": "Auberge Saint-Laurent",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant / Auberge",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "rustikal",
+        "kulinarisch",
+        "gemütlich"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Kate  Filatova",
+      "bild_quelle_url": "https://www.pexels.com/photo/cozy-rustic-restaurant-interior-with-wooden-beams-30457533/",
+      "bild": "bilder/Auberge-SaintLaurent.jpg"
+    },
+    {
+      "name": "Autour de la Table",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "französisch",
+        "gemütlich",
+        "kulinarisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Richard L",
+      "bild_quelle_url": "https://www.pexels.com/photo/elegant-dining-setup-in-cozy-restaurant-interior-32738699/",
+      "bild": "bilder/Autour-de-la-Table.jpg"
+    },
+    {
+      "name": "Belchen",
+      "ort": "Landkreis Lörrach",
+      "kategorie": "Berg/Aussichtspunkt",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "Weite Aussicht",
+        "Ruhe"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Mit 1.414 Metern höchster Gipfel im Landkreis Lörrach und dritthöchster Schwarzwaldgipfel, bekannt für seine Fernsicht über Deutschland, Frankreich und die Schweiz.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Jcmotive",
+      "bild_quelle_url": "https://www.pexels.com/photo/aerial-view-of-morgennebel-in-german-mountains-35265310/",
+      "bild": "bilder/Belchen.jpg"
+    },
+    {
+      "name": "Biosphärengebiet Schwarzwald",
+      "ort": "Schwarzwald (Landkreis Lörrach u.a.)",
+      "kategorie": "Natur / Ausflugsziel",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "ruhig",
+        "abenteuerlich"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "hund"
+      ],
+      "beschreibung": "UNESCO-Modellregion mit 63.000 Hektar Natur- und Kulturlandschaft, bietet Programme wie das Junior-Ranger-Programm zum Mitmachen und Erleben.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Arlind D",
+      "bild_quelle_url": "https://www.pexels.com/photo/serene-rural-path-in-early-morning-light-31611994/",
+      "bild": "bilder/Biosphaerengebiet-Schwarzwald.jpg"
+    },
+    {
+      "name": "Brudersloch (Klausenhöhle)",
+      "ort": "",
+      "kategorie": "Höhle",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "geheimnisvoll",
+        "abenteuerlich"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Höhle in der Region Lörrach, bekannt als Brudersloch bzw. Klausenhöhle.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Artem Zhukov",
+      "bild_quelle_url": "https://www.pexels.com/photo/light-in-corridor-in-grotto-14925113/",
+      "bild": "bilder/Brudersloch-Klausenhoehle.jpg"
+    },
     {
       "name": "Burg Rötteln",
       "ort": "Lörrach",
       "kategorie": "Sehenswürdigkeit / Wandern",
       "hund": "ja",
       "lage": "draußen",
-      "preis": "kostenlos",
-      "stimmung": ["aktiv", "entspannt", "aussichtsreich"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Burgruine auf einer bewaldeten Anhöhe oberhalb von Lörrach, mit Blick über die Stadt und das untere Wiesental.",
+      "preis": "kostenlos (Burgruine frei zugänglich)",
+      "stimmung": [
+        "aktiv",
+        "entspannt",
+        "aussichtsreich"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Burgruine auf einer bewaldeten Anhöhe oberhalb von Lörrach, mit Blick über die Stadt und das untere Wiesental. Guter Ausgangspunkt für eine Wanderung mit Aussicht, als Freiluft-Ziel grundsätzlich hundefreundlich.",
       "adresse": "Röttler Schlossweg, 79541 Lörrach",
       "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "bild_fotograf": "Juan Carlos Quispe P",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-female-hikers-taking-a-selfie-by-mountain-lake-38244874/",
+      "bild": "bilder/Burg-Roetteln.jpg"
     },
     {
-      "name": "Grüttpark Lörrach",
+      "name": "Burgruine Rötteln (Schloss Rötteln)",
       "ort": "Lörrach",
-      "kategorie": "Park / Naherholung",
+      "kategorie": "Historische Sehenswürdigkeit / Burgruine",
       "hund": "ja",
       "lage": "draußen",
-      "preis": "kostenlos",
-      "stimmung": ["entspannt", "aktiv"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Landschaftspark mit See, Rosengarten und Naturwiesen am Rand von Lörrach, nahe der Grenze zu Basel.",
-      "adresse": "Grüttweg, 79539 Lörrach",
-      "bildquelle": "eigenes_foto",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "preis": "",
+      "stimmung": [
+        "historisch",
+        "aussichtsreich",
+        "romantisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "hund",
+        "alleine"
+      ],
+      "beschreibung": "Beeindruckende Burgruine hoch über dem Rheintal mit fantastischem Ausblick, hundefreundlich und mit Restaurant vor Ort.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Özgür Akman",
+      "bild_quelle_url": "https://www.pexels.com/photo/ancient-stone-arches-in-izmir-turkey-38350570/",
+      "bild": "bilder/Burgruine-Roetteln-Schloss-Roetteln.jpg"
     },
     {
-      "name": "Tüllinger Berg",
+      "name": "Café GUPI",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Café",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "gemütlich",
+        "entspannt",
+        "kulinarisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "alleine"
+      ],
+      "beschreibung": "Café in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-round-pendant-lamps-in-cafeteria-827528/",
+      "bild": "bilder/Caf-GUPI.jpg"
+    },
+    {
+      "name": "CityBeaCH",
+      "ort": "",
+      "kategorie": "Beachbar",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Sommer",
+        "Strand-Feeling",
+        "Party"
+      ],
+      "passend_fuer": [
+        "18_25",
+        "zu_zweit"
+      ],
+      "beschreibung": "Beachbar mit Sommer-Flair, beliebter Nightlife-Treffpunkt in der Region Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Deniz Gezer",
+      "bild_quelle_url": "https://www.pexels.com/photo/refreshing-cocktail-on-izmir-beachfront-29510338/",
+      "bild": "bilder/CityBeaCH.jpg"
+    },
+    {
+      "name": "Deli Drei König",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Deli / Café",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "leger",
+        "kulinarisch",
+        "gemütlich"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Deli/Café in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Merili M",
+      "bild_quelle_url": "https://www.pexels.com/photo/view-of-a-counter-display-cabinet-and-a-menu-board-in-a-cafe-18462790/",
+      "bild": "bilder/Deli-Drei-Koenig.jpg"
+    },
+    {
+      "name": "Disc Golf im Grüttpark",
       "ort": "Lörrach",
-      "kategorie": "Wandern / Aussicht",
+      "kategorie": "Sport/Freizeit",
       "hund": "ja",
       "lage": "draußen",
-      "preis": "kostenlos",
-      "stimmung": ["aktiv", "entspannt", "aussichtsreich"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Aussichtshügel mit Weinbergen über Lörrach, beliebte Runde für Spaziergänge mit Weitblick.",
-      "adresse": "Tüllinger Berg, 79539 Lörrach",
-      "bildquelle": "eigenes_foto",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "preis": "",
+      "stimmung": [
+        "Aktiv",
+        "Natur",
+        "Spaß"
+      ],
+      "passend_fuer": [
+        "hund",
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Disc-Golf-Parcours im Grüttpark in Lörrach, ideal für einen aktiven Ausflug im Grünen.",
+      "adresse": "Grüttpark, Lörrach",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Yousef  Faisal",
+      "bild_quelle_url": "https://www.pexels.com/photo/austria-16136406/",
+      "bild": "bilder/Disc-Golf-im-Gruettpark.jpg"
     },
     {
       "name": "Dreiländerbrücke & Dreiländergarten",
@@ -54,28 +375,544 @@
       "hund": "ja",
       "lage": "draußen",
       "preis": "kostenlos",
-      "stimmung": ["entspannt", "aussichtsreich"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Flacher Spaziergang über die Fußgängerbrücke zwischen Deutschland und Frankreich, direkt am Rhein.",
+      "stimmung": [
+        "entspannt",
+        "aussichtsreich"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Einfacher, flacher Spaziergang über die Fußgängerbrücke zwischen Deutschland und Frankreich, direkt am Rhein. Der angrenzende Dreiländergarten bietet viel Grünfläche. Leicht begehbar, auch gut für einen kurzen, entspannten Spaziergang zwischendurch.",
       "adresse": "Dreiländerbrücke, 79576 Weil am Rhein",
       "bildquelle": "pexels",
+      "bild_fotograf": "Gundula Vogel",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-people-walking-on-a-trail-in-the-woods-28168641/",
+      "bild": "bilder/Dreilaenderbruecke-Dreilaendergarten.jpg"
+    },
+    {
+      "name": "Dreiländermuseum Lörrach",
+      "ort": "Lörrach",
+      "kategorie": "Museum",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "kulturell",
+        "informativ",
+        "ruhig"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Museum, das die Geschichte des Dreiländerecks Deutschland-Frankreich-Schweiz erkundet.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Ilya Andrianov",
+      "bild_quelle_url": "https://www.pexels.com/photo/people-wearing-hoodie-jacket-while-looking-at-the-frames-behind-the-glass-wall-6644257/",
+      "bild": "bilder/Dreilaendermuseum-Loerrach.jpg"
+    },
+    {
+      "name": "Einmal durch die Reben",
+      "ort": "Fischingen/Lörrach",
+      "kategorie": "Wanderung/Radtour",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "Genuss",
+        "Entspannung"
+      ],
+      "passend_fuer": [
+        "hund",
+        "zu_zweit"
+      ],
+      "beschreibung": "Wander- oder Radtour durch die Weinberge des Markgräflerlands, als Ausflugstipp der Stadt Lörrach gelistet.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Mone Kostner",
+      "bild_quelle_url": "https://www.pexels.com/photo/stunning-alpine-landscape-with-mountain-reflection-35689385/",
+      "bild": "bilder/Einmal-durch-die-Reben.jpg"
+    },
+    {
+      "name": "Erdmannshöhle",
+      "ort": "Hasel",
+      "kategorie": "Höhle / Naturwunder",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "geheimnisvoll",
+        "Natur",
+        "abenteuerlich"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Natürliche Höhle in Hasel, ein besonderes Naturwunder in der Region rund um Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Artem Zhukov",
+      "bild_quelle_url": "https://www.pexels.com/photo/light-in-corridor-in-grotto-14925113/",
+      "bild": "bilder/Erdmannshoehle.jpg"
+    },
+    {
+      "name": "Erlebniskletterwald Lörrach",
+      "ort": "Lörrach",
+      "kategorie": "Kletterwald / Freizeitpark",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "abenteuerlich",
+        "aktiv",
+        "für Familien"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Kletterwald in Lörrach mit verschiedenen Parcours für Klettererlebnisse in luftiger Höhe.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Maria-Theodora Andrikopoulou",
+      "bild_quelle_url": "https://www.pexels.com/photo/people-walking-on-the-street-near-ferris-wheel-14446486/",
+      "bild": "bilder/Erlebniskletterwald-Loerrach.jpg"
+    },
+    {
+      "name": "FREXIT - Live",
+      "ort": "Lörrach",
+      "kategorie": "Escape Room",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Spannung",
+        "Rätsel",
+        "Team-Erlebnis"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Live-Escape-Room-Erlebnis als Freizeitangebot in der Region Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Animesh Srivastava",
+      "bild_quelle_url": "https://www.pexels.com/photo/photo-of-an-exit-signage-8236056/",
+      "bild": "bilder/FREXIT-Live.jpg"
+    },
+    {
+      "name": "Freibad Lörrach",
+      "ort": "Lörrach",
+      "kategorie": "Schwimmbad",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Erfrischung",
+        "Familienfreundlich",
+        "Sommer"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Größtes Freibad im Landkreis Lörrach mit Trampolin, Riesenrutsche, Sprungbrettern und Wellnessangeboten.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Juli Ane",
+      "bild_quelle_url": "https://www.pexels.com/photo/serene-pool-with-sunlit-ripples-and-buoy-line-31049378/",
+      "bild": "bilder/Freibad-Loerrach.jpg"
+    },
+    {
+      "name": "Gasthaus Zur Blume",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Gasthaus",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "traditionell",
+        "gemütlich",
+        "rustikal"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Gasthaus in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/wheels-by-benches-in-restaurant-15913597/",
+      "bild": "bilder/Gasthaus-Zur-Blume.jpg"
+    },
+    {
+      "name": "Glow Golf",
+      "ort": "Lörrach",
+      "kategorie": "Minigolf/Freizeit",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Spaß",
+        "Familienfreundlich",
+        "Besonderes Erlebnis"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Schwarzlicht-Minigolf als Freizeitangebot in Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Manuel Campagnoli",
+      "bild_quelle_url": "https://www.pexels.com/photo/child-playing-minigolf-in-outdoor-park-32433862/",
+      "bild": "bilder/Glow-Golf.jpg"
+    },
+    {
+      "name": "Grüttpark (Disc Golf)",
+      "ort": "Lörrach",
+      "kategorie": "Freizeitpark / Sport",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "aktiv",
+        "locker",
+        "gesellig"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Park in Lörrach mit Disc-Golf-Angebot als Freizeitaktivität.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Maria-Theodora Andrikopoulou",
+      "bild_quelle_url": "https://www.pexels.com/photo/people-walking-on-the-street-near-ferris-wheel-14446486/",
+      "bild": "bilder/Gruettpark-Disc-Golf.jpg"
+    },
+    {
+      "name": "Grüttpark Lörrach",
+      "ort": "Lörrach",
+      "kategorie": "Park / Naherholung",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "kostenlos",
+      "stimmung": [
+        "entspannt",
+        "aktiv"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Landschaftspark mit See, Rosengarten und Naturwiesen am Rand von Lörrach, nahe der Grenze zu Basel. In der Nähe fließt ein kleiner Bach, in dem Hunde planschen können. Gut geeignet für einen entspannten Spaziergang.",
+      "adresse": "Grüttweg, 79539 Lörrach",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Antonio Friedemann",
+      "bild_quelle_url": "https://www.pexels.com/photo/woman-in-red-and-white-dress-sitting-on-brown-wicker-chair-11290545/",
+      "bild": "bilder/Gruettpark-Loerrach.jpg"
+    },
+    {
+      "name": "Harrem",
+      "ort": "",
+      "kategorie": "Bar / Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Nightlife",
+        "gesellig"
+      ],
+      "passend_fuer": [
+        "18_25"
+      ],
+      "beschreibung": "In der Region Lörrach gelistetes Nightlife-Ziel.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "El gringo photo",
+      "bild_quelle_url": "https://www.pexels.com/photo/clear-glass-items-on-the-bar-12529819/",
+      "bild": "bilder/Harrem.jpg"
+    },
+    {
+      "name": "IMPULSIV Lörrach (Eventmanufaktur)",
+      "ort": "Lörrach",
+      "kategorie": "Eventlocation / Nightlife",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Party",
+        "Event",
+        "modern"
+      ],
+      "passend_fuer": [
+        "18_25",
+        "zu_zweit"
+      ],
+      "beschreibung": "Eventmanufaktur mit Beach Bar, Black Forest Lounge, Billardlounge und Playlounge für Veranstaltungen und Nightlife.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Çağın KARGI",
+      "bild_quelle_url": "https://www.pexels.com/photo/people-partying-in-the-club-9105123/",
+      "bild": "bilder/IMPULSIV-Loerrach-Eventmanufaktur.jpg"
+    },
+    {
+      "name": "Irrsinn Bar",
+      "ort": "",
+      "kategorie": "Bar",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Party",
+        "ausgefallen",
+        "Nightlife"
+      ],
+      "passend_fuer": [
+        "18_25"
+      ],
+      "beschreibung": "Bar in der Region Lörrach, bekannt als Nightlife-Treffpunkt.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Guto Macedo",
+      "bild_quelle_url": "https://www.pexels.com/photo/happy-woman-enjoying-night-out-at-bar-37945716/",
+      "bild": "bilder/Irrsinn-Bar.jpg"
+    },
+    {
+      "name": "Lasser Brauereimuseum",
+      "ort": "Lörrach",
+      "kategorie": "Museum",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Kultur",
+        "Geschichte",
+        "Genuss"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Museum in Lörrach zur Geschichte der Brauereikultur, empfohlen als Ausflugstipp der Stadt.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Berna",
+      "bild_quelle_url": "https://www.pexels.com/photo/woman-taking-pictures-in-a-museum-19069486/",
+      "bild": "bilder/Lasser-Brauereimuseum.jpg"
+    },
+    {
+      "name": "Lörrach Skulpturenweg",
+      "ort": "Lörrach",
+      "kategorie": "Kunst / Rundweg",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "künstlerisch",
+        "ruhig",
+        "entspannt"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Open-Air-Kunstpfad durch Lörrach mit verschiedenen Skulpturen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Markus Spiske",
+      "bild_quelle_url": "https://www.pexels.com/photo/brown-and-white-wooden-road-sign-172065/",
+      "bild": "bilder/Loerrach-Skulpturenweg.jpg"
+    },
+    {
+      "name": "Lotta - Café & Bar",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Café / Bar",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "leger",
+        "gesellig",
+        "modern"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25",
+        "alleine"
+      ],
+      "beschreibung": "Café und Bar in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Antoine Maurin",
+      "bild_quelle_url": "https://www.pexels.com/photo/bar-counter-in-restaurant-14305477/",
+      "bild": "bilder/Lotta-Caf-Bar.jpg"
+    },
+    {
+      "name": "Matt & Elly Brewery & Kitchen",
+      "ort": "",
+      "kategorie": "Brauerei / Restaurant / Bar",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "modern",
+        "Craft-Bier",
+        "gesellig"
+      ],
+      "passend_fuer": [
+        "18_25",
+        "zu_zweit"
+      ],
+      "beschreibung": "Brauerei-Restaurant mit Bar, beliebtes Nightlife-Ziel in der Region Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Daka",
+      "bild_quelle_url": "https://www.pexels.com/photo/brown-wooden-barrels-near-the-table-12360531/",
+      "bild": "bilder/Matt-Elly-Brewery-Kitchen.jpg"
+    },
+    {
+      "name": "Naturpark Südschwarzwald",
+      "ort": "Region Lörrach",
+      "kategorie": "Naturgebiet",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "naturnah",
+        "ruhig",
+        "weitläufig"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Naturpark im südlichen Schwarzwald, beliebtes Ausflugsziel rund um Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Natural Light Visuals",
+      "bild_quelle_url": "https://www.pexels.com/photo/scenic-rural-landscape-with-wind-turbines-38781475/",
+      "bild": "bilder/Naturpark-Suedschwarzwald.jpg"
+    },
+    {
+      "name": "Radtour durch das Kandertal",
+      "ort": "Kandertal",
+      "kategorie": "Radtour",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Aktiv",
+        "Natur",
+        "Entspannung"
+      ],
+      "passend_fuer": [
+        "hund",
+        "zu_zweit"
+      ],
+      "beschreibung": "Beliebte Radtour durch das landschaftlich reizvolle Kandertal bei Lörrach.",
+      "adresse": "",
+      "bildquelle": "",
       "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "bild_quelle_url": "",
+      "bild": ""
+    },
+    {
+      "name": "Rathaus Lörrach",
+      "ort": "Lörrach",
+      "kategorie": "Sehenswürdigkeit",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "historisch",
+        "kulturell"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Historisches Rathaus mit Bedeutung aus der Zeit der Revolutionen von 1848.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Wolfgang Weiser",
+      "bild_quelle_url": "https://www.pexels.com/photo/hamburger-rathaus-27499409/",
+      "bild": "bilder/Rathaus-Loerrach.jpg"
     },
     {
       "name": "Rebberg-Wanderung Ötlingen–Haltingen",
-      "ort": "Weil am Rhein",
+      "ort": "Weil am Rhein (Ötlingen, Haltingen)",
       "kategorie": "Wandern",
       "hund": "ja",
       "lage": "draußen",
       "preis": "kostenlos",
-      "stimmung": ["aktiv", "entspannt", "aussichtsreich"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Wanderung durch die Rebberge, verbindet Ötlingen und Haltingen, Start ab Vitra Campus.",
+      "stimmung": [
+        "aktiv",
+        "entspannt",
+        "aussichtsreich"
+      ],
+      "passend_fuer": [
+        "hund",
+        "zu_zweit"
+      ],
+      "beschreibung": "Wanderung durch die Rebberge, ausgehend vom Vitra Campus hoch nach Ötlingen und wieder runter nach Haltingen. Unterwegs Aussicht über das Rheintal, alte Häuser und Brunnen. Verbindet zwei Ortsteile von Weil am Rhein auf einer überschaubaren Runde.",
       "adresse": "Start ab Vitra Campus, 79576 Weil am Rhein",
       "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "bild_fotograf": "Juan Carlos Quispe P",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-female-hikers-taking-a-selfie-by-mountain-lake-38244874/",
+      "bild": "bilder/RebbergWanderung-OetlingenHaltingen.jpg"
+    },
+    {
+      "name": "Restaurant EXTRA",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "modern",
+        "kulinarisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-round-pendant-lamps-in-cafeteria-827528/",
+      "bild": "bilder/Restaurant-EXTRA.jpg"
+    },
+    {
+      "name": "Restaurant LA",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "modern",
+        "kulinarisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-round-pendant-lamps-in-cafeteria-827528/",
+      "bild": "bilder/Restaurant-LA.jpg"
     },
     {
       "name": "Rheinuferweg",
@@ -84,88 +921,388 @@
       "hund": "ja",
       "lage": "draußen",
       "preis": "kostenlos",
-      "stimmung": ["entspannt"],
-      "passend_fuer": ["alleine", "zu_zweit", "hund"],
-      "beschreibung": "Einfacher, hundefreundlicher Weg entlang des Rheins bei Weil am Rhein.",
+      "stimmung": [
+        "entspannt"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Einfacher Weg entlang des Rheins bei Weil am Rhein, laut mehreren Wanderquellen besonders hundefreundlich. Flaches, leicht begehbares Gelände, gut für einen ruhigen Spaziergang.",
       "adresse": "entlang des Rheins, Weil am Rhein",
       "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
-    },
-    {
-      "name": "Aqualon Therme",
-      "ort": "Bad Säckingen",
-      "kategorie": "Wellness",
-      "hund": "nein",
-      "lage": "drinnen",
-      "preis": "Eintritt",
-      "stimmung": ["entspannt"],
-      "passend_fuer": ["zu_zweit", "alleine"],
-      "beschreibung": "Therme mit Sauna- und Wellnessbereich, ideal für einen entspannten Tag zu zweit.",
-      "adresse": "Bad Säckingen",
-      "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
-    },
-    {
-      "name": "Wunder-Bar",
-      "ort": "Lörrach",
-      "kategorie": "Bar / Nightlife",
-      "hund": "nein",
-      "lage": "drinnen",
-      "preis": "€€",
-      "stimmung": ["aktiv"],
-      "passend_fuer": ["18_25", "zu_zweit"],
-      "beschreibung": "Bar in Lörrach für einen entspannten Abend mit Freunden.",
-      "adresse": "Lörrach",
-      "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
-    },
-    {
-      "name": "Irrsinn Bar Harrem",
-      "ort": "Lörrach",
-      "kategorie": "Bar / Nightlife",
-      "hund": "nein",
-      "lage": "drinnen",
-      "preis": "€€",
-      "stimmung": ["aktiv"],
-      "passend_fuer": ["18_25"],
-      "beschreibung": "Bar mit besonderem Ambiente für einen Abend unter Freunden.",
-      "adresse": "Lörrach",
-      "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
-    },
-    {
-      "name": "Matt & Elly Brewery & Kitchen",
-      "ort": "Lörrach",
-      "kategorie": "Restaurant / Brauerei",
-      "hund": "ja",
-      "lage": "drinnen",
-      "preis": "€€",
-      "stimmung": ["entspannt", "aktiv"],
-      "passend_fuer": ["zu_zweit", "18_25"],
-      "beschreibung": "Eigene Brauerei mit Küche, gute Adresse für Essen und Bier in geselliger Runde.",
-      "adresse": "Lörrach",
-      "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "bild_fotograf": "Gundula Vogel",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-people-walking-on-a-trail-in-the-woods-28168641/",
+      "bild": "bilder/Rheinuferweg.jpg"
     },
     {
       "name": "Rothaus-Bierstüble",
+      "ort": "",
+      "kategorie": "Bar / Kneipe",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "gemütlich",
+        "gesellig",
+        "Bier"
+      ],
+      "passend_fuer": [
+        "18_25",
+        "zu_zweit"
+      ],
+      "beschreibung": "Bierstüble mit gemütlicher Atmosphäre, als Nightlife-Ziel in der Region Lörrach gelistet.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Antoine Maurin",
+      "bild_quelle_url": "https://www.pexels.com/photo/bar-counter-in-restaurant-14305477/",
+      "bild": "bilder/RothausBierstueble.jpg"
+    },
+    {
+      "name": "Rührberger Hof",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Gasthaus / Restaurant",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "gemütlich",
+        "traditionell"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Gasthaus in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Claudia Schmalz",
+      "bild_quelle_url": "https://www.pexels.com/photo/interior-of-elegant-restaurant-14803087/",
+      "bild": "bilder/Ruehrberger-Hof.jpg"
+    },
+    {
+      "name": "Spass-Park Hochschwarzwald",
+      "ort": "Hochschwarzwald",
+      "kategorie": "Freizeitpark",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Spaß",
+        "Familienfreundlich",
+        "Action"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Freizeitpark im Hochschwarzwald mit verschiedenen Attraktionen für Familien.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Maria-Theodora Andrikopoulou",
+      "bild_quelle_url": "https://www.pexels.com/photo/people-walking-on-the-street-near-ferris-wheel-14446486/",
+      "bild": "bilder/SpassPark-Hochschwarzwald.jpg"
+    },
+    {
+      "name": "Stadtpark Lörrach",
       "ort": "Lörrach",
+      "kategorie": "Park",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "ruhig",
+        "idyllisch",
+        "entspannt"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "hund"
+      ],
+      "beschreibung": "Idyllischer Park mit bunten Blumenbeeten und ruhigen Spazierwegen im Herzen von Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Melike  B",
+      "bild_quelle_url": "https://www.pexels.com/photo/a-bench-is-sitting-in-a-grassy-field-28207194/",
+      "bild": "bilder/Stadtpark-Loerrach.jpg"
+    },
+    {
+      "name": "Super 5 Teamevent",
+      "ort": "Lörrach",
+      "kategorie": "Teamevent/Freizeitaktivität",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Team-Erlebnis",
+        "Spaß",
+        "Action"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "18_25"
+      ],
+      "beschreibung": "Teamevent-Angebot als Freizeittipp der Stadt Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Walls.io",
+      "bild_quelle_url": "https://www.pexels.com/photo/three-women-playing-cards-in-an-office-15543210/",
+      "bild": "bilder/Super-5-Teamevent.jpg"
+    },
+    {
+      "name": "Todtnau",
+      "ort": "Todtnau",
+      "kategorie": "Stadt/Ausflugsziel",
+      "hund": "",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "Ruhe",
+        "Schwarzwald-Flair"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Malerische Kleinstadt im Südschwarzwald, beliebtes Ausflugsziel im Landkreis Lörrach.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Ava Neva",
+      "bild_quelle_url": "https://www.pexels.com/photo/city-27770276/",
+      "bild": "bilder/Todtnau.jpg"
+    },
+    {
+      "name": "Todtnauer Wasserfall",
+      "ort": "Todtnau",
+      "kategorie": "Naturattraktion / Wasserfall",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "beeindruckend",
+        "naturnah",
+        "ruhig"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "97 Meter hoher Wasserfall, ein Highlight entlang des Wasserfallsteigs.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Tommes Frites",
+      "bild_quelle_url": "https://www.pexels.com/photo/golling-waterfall-in-spring-salzburg-austria-31778415/",
+      "bild": "bilder/Todtnauer-Wasserfall.jpg"
+    },
+    {
+      "name": "Traube",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Restaurant / Gasthaus",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "gemütlich",
+        "traditionell",
+        "kulinarisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Nici Gottstein",
+      "bild_quelle_url": "https://www.pexels.com/photo/an-elegant-table-settings-11775402/",
+      "bild": "bilder/Traube.jpg"
+    },
+    {
+      "name": "Tüllinger Berg",
+      "ort": "Lörrach",
+      "kategorie": "Wandern / Aussicht",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "kostenlos",
+      "stimmung": [
+        "aktiv",
+        "entspannt",
+        "aussichtsreich"
+      ],
+      "passend_fuer": [
+        "hund",
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "Von Einheimischen kurz \"Tüllinger\" genannt, erhebt sich dieser Hügel über Lörrach und ist von Weinbergen umgeben. Beliebte Runde für einen Spaziergang oder eine kurze Wanderung mit Aussicht.",
+      "adresse": "Tüllinger Berg, 79539 Lörrach",
+      "bildquelle": "",
+      "bild_fotograf": "",
+      "bild_quelle_url": "",
+      "bild": ""
+    },
+    {
+      "name": "Wasserfallsteig (Todtnauer Wasserfall)",
+      "ort": "Todtnauberg",
+      "kategorie": "Wanderweg",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "abenteuerlich",
+        "beeindruckend"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "hund"
+      ],
+      "beschreibung": "12 Kilometer langer Wanderweg vom Feldberg bis Todtnauberg vorbei an mehreren Wasserfällen, darunter der 97 Meter hohe Todtnauer Wasserfall.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Daniel Adner",
+      "bild_quelle_url": "https://www.pexels.com/photo/serene-wooden-path-through-autumn-forest-36752961/",
+      "bild": "bilder/Wasserfallsteig-Todtnauer-Wasserfall.jpg"
+    },
+    {
+      "name": "Wasserfallsteig",
+      "ort": "Feldberg - Todtnauberg",
+      "kategorie": "Wanderweg",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "naturnah",
+        "abenteuerlich",
+        "beeindruckend"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit"
+      ],
+      "beschreibung": "12 Kilometer langer Wanderweg vom Feldberg bis Todtnauberg, vorbei an mehreren Wasserfällen, darunter der 97 Meter hohe Todtnauer Wasserfall.",
+      "adresse": "",
+      "bildquelle": "",
+      "bild_fotograf": "",
+      "bild_quelle_url": "",
+      "bild": ""
+    },
+    {
+      "name": "Wasserschloss Inzlingen",
+      "ort": "Inzlingen",
+      "kategorie": "Sehenswürdigkeit / Schloss",
+      "hund": "nein",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "idyllisch",
+        "historisch",
+        "romantisch"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "alleine"
+      ],
+      "beschreibung": "Charmantes Wasserschloss in Inzlingen, beliebtes Ausflugsziel für Spaziergänge.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Hamit Ferhat",
+      "bild_quelle_url": "https://www.pexels.com/photo/schloss-johannisburg-over-the-river-main-aschaffenburg-germany-17266147/",
+      "bild": "bilder/Wasserschloss-Inzlingen.jpg"
+    },
+    {
+      "name": "Wirtschaft Schützenhaus",
+      "ort": "Efringen-Kirchen",
+      "kategorie": "Gasthaus",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "rustikal",
+        "gesellig",
+        "traditionell"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "alleine"
+      ],
+      "beschreibung": "Gasthaus in Efringen-Kirchen.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/wheels-by-benches-in-restaurant-15913597/",
+      "bild": "bilder/Wirtschaft-Schuetzenhaus.jpg"
+    },
+    {
+      "name": "Wunder-Bar",
+      "ort": "",
+      "kategorie": "Bar",
+      "hund": "nein",
+      "lage": "drinnen",
+      "preis": "",
+      "stimmung": [
+        "Party",
+        "gesellig",
+        "Nightlife"
+      ],
+      "passend_fuer": [
+        "18_25"
+      ],
+      "beschreibung": "Bar in der Region Lörrach, als Nightlife-Ziel gelistet.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Guto Macedo",
+      "bild_quelle_url": "https://www.pexels.com/photo/happy-woman-enjoying-night-out-at-bar-37945716/",
+      "bild": "bilder/WunderBar.jpg"
+    },
+    {
+      "name": "Yam",
+      "ort": "Efringen-Kirchen",
       "kategorie": "Restaurant",
       "hund": "nein",
       "lage": "drinnen",
-      "preis": "€€",
-      "stimmung": ["entspannt"],
-      "passend_fuer": ["18_25", "zu_zweit"],
-      "beschreibung": "Gemütliches Bierstüble, gut für einen romantischen oder geselligen Abend.",
-      "adresse": "Lörrach",
+      "preis": "",
+      "stimmung": [
+        "modern",
+        "kulinarisch",
+        "leger"
+      ],
+      "passend_fuer": [
+        "zu_zweit",
+        "alleine"
+      ],
+      "beschreibung": "Restaurant in Efringen-Kirchen.",
+      "adresse": "",
       "bildquelle": "pexels",
-      "bild_fotograf": "",
-      "bild_quelle_url": ""
+      "bild_fotograf": "Valeria Boltneva",
+      "bild_quelle_url": "https://www.pexels.com/photo/two-round-pendant-lamps-in-cafeteria-827528/",
+      "bild": "bilder/Yam.jpg"
+    },
+    {
+      "name": "Zauberwald-Pfad Bernau im Schwarzwald",
+      "ort": "Bernau im Schwarzwald",
+      "kategorie": "Familienausflug / Wanderweg",
+      "hund": "ja",
+      "lage": "draußen",
+      "preis": "",
+      "stimmung": [
+        "Natur",
+        "märchenhaft",
+        "für Familien"
+      ],
+      "passend_fuer": [
+        "alleine",
+        "zu_zweit",
+        "hund"
+      ],
+      "beschreibung": "Naturpfad im Schwarzwald für Familienausflüge, Hunde sind teilweise erlaubt.",
+      "adresse": "",
+      "bildquelle": "pexels",
+      "bild_fotograf": "Bastian Riccardi",
+      "bild_quelle_url": "https://www.pexels.com/photo/scenic-mountain-path-with-signpost-at-sunrise-28553956/",
+      "bild": "bilder/ZauberwaldPfad-Bernau-im-Schwarzwald.jpg"
     }
   ]
 }

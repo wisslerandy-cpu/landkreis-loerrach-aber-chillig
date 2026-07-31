@@ -137,8 +137,8 @@
 
     const photo = document.createElement("div");
     photo.className = "card-photo";
-    if (entry.bild_quelle_url) {
-      photo.style.backgroundImage = "url('" + entry.bild_quelle_url + "')";
+    if (entry.bild) {
+      photo.style.backgroundImage = "url('" + entry.bild + "')";
     } else {
       const fallback = document.createElement("div");
       fallback.className = "no-photo";
@@ -181,10 +181,15 @@
       meta.appendChild(a);
     }
     if (entry.bildquelle && entry.bildquelle !== "eigenes_foto" && entry.bild_fotograf) {
-      const credit = document.createElement("span");
+      const credit = document.createElement(entry.bild_quelle_url ? "a" : "span");
       credit.className = "credit";
       credit.textContent =
         "Foto: " + entry.bild_fotograf + " (" + entry.bildquelle + ")";
+      if (entry.bild_quelle_url) {
+        credit.href = entry.bild_quelle_url;
+        credit.target = "_blank";
+        credit.rel = "noopener noreferrer";
+      }
       meta.appendChild(credit);
     }
     card.appendChild(meta);
