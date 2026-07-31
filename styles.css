@@ -307,7 +307,9 @@ main {
   gap: 3px;
 }
 .card .meta .credit { font-style: italic; }
-.card .meta a { color: #8A5A3D; }
+.card .meta a { color: #C9622F; font-weight: 600; text-decoration: none; }
+.card .meta a:hover { text-decoration: underline; }
+.card .meta .links { display: flex; gap: 4px; }
 
 .empty {
   margin-top: 60px;
