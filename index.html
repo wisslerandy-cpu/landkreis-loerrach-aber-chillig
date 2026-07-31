@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landkreis Lörrach, aber chillig</title>
+<meta name="description" content="Ehrliche Freizeittipps für den Landkreis Lörrach – sag uns kurz, wie dir grad ist, wir zeigen dir passende Orte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-blob blob-a"></div>
+<div class="bg-blob blob-b"></div>
+
+<header class="site-header">
+  <span class="wordmark">Landkreis Lörrach<span class="wordmark-accent">, aber chillig</span></span>
+  <a class="tiktok-link" href="https://www.tiktok.com/@unternehmungen_landkreis" target="_blank" rel="noopener">
+    <span class="tiktok-dot"></span> auf TikTok
+  </a>
+</header>
+
+<main>
+
+  <section class="picker" id="picker">
+    <h1>Wie ist dir grad zumute?</h1>
+    <p class="sub">Kein Werbe-Blabla — wähl aus, wer dabei ist und wonach dir ist. Wir zeigen dir 2–3 echte Orte, keine Empfehlung ist bezahlt.</p>
+
+    <div class="picker-group">
+      <span class="picker-label">Mit wem?</span>
+      <div class="chip-row" id="wer-chips">
+        <button class="chip" data-group="wer" data-value="alleine">Alleine</button>
+        <button class="chip" data-group="wer" data-value="zu_zweit">Zu zweit</button>
+        <button class="chip" data-group="wer" data-value="hund">Mit Hund</button>
+        <button class="chip" data-group="wer" data-value="18_25">18–25</button>
+      </div>
+    </div>
+
+    <div class="picker-group">
+      <span class="picker-label">Wonach ist dir?</span>
+      <div class="chip-row" id="stimmung-chips">
+        <!-- wird per JS aus den Daten befüllt -->
+      </div>
+    </div>
+
+    <button class="cta" id="cta-button" disabled>Zeig mir was</button>
+  </section>
+
+  <section class="results" id="results" hidden>
+    <div class="results-head">
+      <h2 id="results-title">Für dich rausgesucht</h2>
+      <button class="reset-link" id="reset-button">nochmal von vorn</button>
+    </div>
+    <div class="stack" id="stack"></div>
+  </section>
+
+  <section class="empty" id="empty-state" hidden>
+    <p>Hm, dafür haben wir gerade noch nichts Passendes im Landkreis gefunden.</p>
+    <button class="reset-link" id="empty-reset-button">andere Auswahl probieren</button>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Keine Werbung, keine bezahlten Plätze — nur Orte im Landkreis Lörrach, die es wert sind.</p>
+  <nav>
+    <a href="https://wisslerandy-cpu.github.io/Unternehmungen-datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+    <span aria-hidden="true">·</span>
+    <a href="https://wisslerandy-cpu.github.io/Unternehmungen-datenschutz/terms.html" target="_blank" rel="noopener">Nutzungsbedingungen</a>
+  </nav>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
