@@ -4,8 +4,11 @@
   const state = {
     wer: null,
     stimmung: null,
+    suche: "",
     daten: [],
   };
+
+  let searchActive = false;
 
   const werChips = document.getElementById("wer-chips");
   const stimmungChips = document.getElementById("stimmung-chips");
@@ -14,8 +17,13 @@
   const emptyResetButton = document.getElementById("empty-reset-button");
   const resultsSection = document.getElementById("results");
   const emptySection = document.getElementById("empty-state");
+  const emptyText = document.getElementById("empty-text");
   const resultsTitle = document.getElementById("results-title");
   const stack = document.getElementById("stack");
+  const searchInput = document.getElementById("search-input");
+
+  const EMPTY_TEXT_PICKER = "Hm, dafür haben wir gerade noch nichts Passendes im Landkreis gefunden.";
+  const EMPTY_TEXT_SUCHE = "Da war leider nichts dabei – versuch's mit einem anderen Suchbegriff!";
 
   const WER_LABELS = {
     alleine: "Alleine",
@@ -70,6 +78,10 @@
         }
 
         ctaButton.disabled = !state.wer;
+
+        if (state.suche.trim()) {
+          runSearch();
+        }
       });
     });
   }
@@ -77,6 +89,93 @@
   ctaButton.addEventListener("click", showResults);
   resetButton.addEventListener("click", reset);
   emptyResetButton.addEventListener("click", reset);
+
+  function debounce(fn, wait) {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(fn, wait);
+    };
+  }
+
+  const debouncedSearch = debounce(runSearch, 250);
+
+  searchInput.addEventListener("input", () => {
+    state.suche = searchInput.value;
+    debouncedSearch();
+  });
+
+  function normalize(str) {
+    return (str || "").toString().toLowerCase();
+  }
+
+  function matchesSuche(entry, needle) {
+    if (normalize(entry.name).includes(needle)) return true;
+    if (normalize(entry.ort).includes(needle)) return true;
+    if (normalize(entry.kategorie).includes(needle)) return true;
+    if ((entry.stimmung || []).some((s) => normalize(s).includes(needle))) return true;
+    return false;
+  }
+
+  function matchesFilter(entry) {
+    if (state.wer && !(entry.passend_fuer || []).includes(state.wer)) return false;
+    if (state.stimmung && !(entry.stimmung || []).includes(state.stimmung)) return false;
+    return true;
+  }
+
+  function relevanceRank(entry, needle) {
+    const name = normalize(entry.name);
+    if (name.startsWith(needle)) return 0;
+    if (name.includes(needle)) return 1;
+    if (normalize(entry.ort).includes(needle) || normalize(entry.kategorie).includes(needle)) return 2;
+    return 3;
+  }
+
+  function runSearch() {
+    const needle = normalize(state.suche.trim());
+
+    if (!needle) {
+      if (searchActive) {
+        searchActive = false;
+        if (state.wer) {
+          showResults();
+        } else {
+          resultsSection.hidden = true;
+          emptySection.hidden = true;
+        }
+      }
+      return;
+    }
+
+    searchActive = true;
+
+    const treffer = state.daten
+      .filter((e) => matchesSuche(e, needle) && matchesFilter(e))
+      .sort((a, b) => {
+        const ra = relevanceRank(a, needle);
+        const rb = relevanceRank(b, needle);
+        if (ra !== rb) return ra - rb;
+        return (a.name || "").localeCompare(b.name || "", "de");
+      });
+
+    if (treffer.length === 0) {
+      resultsSection.hidden = true;
+      emptyText.textContent = EMPTY_TEXT_SUCHE;
+      emptySection.hidden = false;
+      return;
+    }
+
+    let title = 'Treffer für „' + state.suche.trim() + '“';
+    if (state.wer) title += " · " + WER_LABELS[state.wer];
+    if (state.stimmung) title += " · " + state.stimmung;
+    resultsTitle.textContent = title;
+
+    stack.innerHTML = "";
+    treffer.forEach((entry) => stack.appendChild(renderCard(entry)));
+
+    emptySection.hidden = true;
+    resultsSection.hidden = false;
+  }
 
   function score(entry) {
     if (!(entry.passend_fuer || []).includes(state.wer)) return -1;
@@ -95,6 +194,7 @@
 
     if (top.length === 0) {
       resultsSection.hidden = true;
+      emptyText.textContent = EMPTY_TEXT_PICKER;
       emptySection.hidden = false;
       emptySection.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
@@ -220,6 +320,9 @@
   function reset() {
     state.wer = null;
     state.stimmung = null;
+    state.suche = "";
+    searchActive = false;
+    searchInput.value = "";
     document.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-active"));
     ctaButton.disabled = true;
     resultsSection.hidden = true;

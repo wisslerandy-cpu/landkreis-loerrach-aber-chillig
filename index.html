@@ -24,6 +24,16 @@
 
 <main>
 
+  <section class="search-section" id="search-section">
+    <div class="search-field">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+        <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="search-input" class="search-input" placeholder="Wonach suchst du? (z. B. Grüttpark, Hundewiese, Bar...)" autocomplete="off">
+    </div>
+  </section>
+
   <section class="picker" id="picker">
     <h1>Wie ist dir grad zumute?</h1>
     <p class="sub">Kein Werbe-Blabla — wähl aus, wer dabei ist und wonach dir ist. Wir zeigen dir 2–3 echte Orte, keine Empfehlung ist bezahlt.</p>
@@ -57,7 +67,7 @@
   </section>
 
   <section class="empty" id="empty-state" hidden>
-    <p>Hm, dafür haben wir gerade noch nichts Passendes im Landkreis gefunden.</p>
+    <p id="empty-text">Hm, dafür haben wir gerade noch nichts Passendes im Landkreis gefunden.</p>
     <button class="reset-link" id="empty-reset-button">andere Auswahl probieren</button>
   </section>
 
