@@ -71,7 +71,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 28px clamp(20px, 5vw, 64px) 0;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .wordmark {
@@ -100,6 +108,7 @@ body {
   background: var(--orange);
   display: inline-block;
 }
+.instagram-dot { background: var(--purple); }
 
 main {
   max-width: 880px;
