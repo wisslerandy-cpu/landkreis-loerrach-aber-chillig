@@ -3,15 +3,19 @@
 
   const state = {
     wer: null,
-    stimmung: null,
+    stimmungTags: null,
+    stimmungLabel: null,
     suche: "",
     daten: [],
   };
 
   let searchActive = false;
+  let detailChipsSichtbar = false;
 
   const werChips = document.getElementById("wer-chips");
-  const stimmungChips = document.getElementById("stimmung-chips");
+  const stimmungChipsMain = document.getElementById("stimmung-chips-main");
+  const stimmungChipsDetail = document.getElementById("stimmung-chips-detail");
+  const mehrAnzeigenBtn = document.getElementById("mehr-anzeigen-btn");
   const ctaButton = document.getElementById("cta-button");
   const resetButton = document.getElementById("reset-button");
   const emptyResetButton = document.getElementById("empty-reset-button");
@@ -32,38 +36,92 @@
     "18_25": "18–25",
   };
 
+  // Kuratierte Hauptkategorien, jeweils mit den Detail-Tags aus den Rohdaten,
+  // die darunterfallen (alle Werte lowercase fuer den Abgleich mit normalize()).
+  // Mit Andy abgestimmt am 2026-08-03.
+  const STIMMUNG_KATEGORIEN = {
+    "Natur": ["natur", "naturnah", "weite aussicht", "aussichtsreich", "weitläufig", "schwarzwald-flair", "idyllisch", "sommer", "strand-feeling"],
+    "Nightlife": ["nightlife", "party", "event", "gesellig"],
+    "Genuss": ["genuss", "kulinarisch", "bier", "craft-bier", "rustikal", "elegant", "modern"],
+    "Entspannung": ["entspannung", "entspannt", "ruhe", "ruhig", "wellness", "gemütlich", "locker", "leger", "erfrischung"],
+    "Kultur": ["kultur", "kulturell", "geschichte", "historisch", "traditionell", "künstlerisch", "informativ", "französisch"],
+    "Action": ["action", "aktiv", "abenteuerlich", "spannung", "spaß", "team-erlebnis", "besonderes erlebnis", "ausgefallen", "beeindruckend", "rätsel", "geheimnisvoll"],
+    "Familienfreundlich": ["familienfreundlich", "für familien"],
+    "Romantik": ["romantisch"],
+  };
+
   fetch("daten.json")
     .then((r) => r.json())
     .then((data) => {
       state.daten = data.eintraege || [];
       buildStimmungChips(state.daten);
     })
-    .catch(() => {
+    .catch((e) => {
+      console.error("daten.json konnte nicht geladen werden:", e);
       state.daten = [];
     });
 
   function buildStimmungChips(eintraege) {
-    const alle = new Set();
-    eintraege.forEach((e) => (e.stimmung || []).forEach((s) => alle.add(s)));
-    stimmungChips.innerHTML = "";
-    Array.from(alle)
-      .sort()
-      .forEach((s) => {
+    // Detail-Tags kommen weiterhin komplett aus den Daten (case-insensitiv dedupliziert,
+    // sonst tauchen z.B. "Aktiv" und "aktiv" als zwei Chips auf), bleiben aber standardmäßig
+    // hinter "mehr anzeigen" versteckt. Die 8 Hauptkategorien sind kuratiert (STIMMUNG_KATEGORIEN)
+    // und matchen beim Klick alle ihre Detail-Tags auf einmal.
+    const gesehen = new Map();
+    eintraege.forEach((e) =>
+      (e.stimmung || []).forEach((s) => {
+        const key = normalize(s);
+        if (!gesehen.has(key)) gesehen.set(key, s);
+      })
+    );
+
+    stimmungChipsMain.innerHTML = "";
+    Object.keys(STIMMUNG_KATEGORIEN).forEach((kategorie) => {
+      const btn = document.createElement("button");
+      btn.className = "chip";
+      btn.dataset.group = "stimmung";
+      btn.dataset.kategorie = kategorie;
+      btn.textContent = kategorie;
+      stimmungChipsMain.appendChild(btn);
+    });
+
+    stimmungChipsDetail.innerHTML = "";
+    Array.from(gesehen.entries())
+      .sort((a, b) => a[1].localeCompare(b[1], "de"))
+      .forEach(([key, anzeige]) => {
         const btn = document.createElement("button");
         btn.className = "chip";
         btn.dataset.group = "stimmung";
-        btn.dataset.value = s;
-        btn.textContent = s.charAt(0).toUpperCase() + s.slice(1);
-        stimmungChips.appendChild(btn);
+        btn.dataset.value = key;
+        btn.textContent = anzeige.charAt(0).toUpperCase() + anzeige.slice(1);
+        stimmungChipsDetail.appendChild(btn);
       });
+
     attachChipHandlers();
+  }
+
+  mehrAnzeigenBtn.addEventListener("click", () => {
+    detailChipsSichtbar = !detailChipsSichtbar;
+    stimmungChipsDetail.hidden = !detailChipsSichtbar;
+    mehrAnzeigenBtn.textContent = detailChipsSichtbar
+      ? "− weniger anzeigen"
+      : "+ mehr Stimmungen anzeigen";
+  });
+
+  function waehleStimmung(chip) {
+    const istKategorie = !!chip.dataset.kategorie;
+    if (istKategorie) {
+      state.stimmungTags = STIMMUNG_KATEGORIEN[chip.dataset.kategorie];
+      state.stimmungLabel = chip.dataset.kategorie;
+    } else {
+      state.stimmungTags = [chip.dataset.value];
+      state.stimmungLabel = chip.textContent;
+    }
   }
 
   function attachChipHandlers() {
     document.querySelectorAll(".chip").forEach((chip) => {
       chip.addEventListener("click", () => {
         const group = chip.dataset.group;
-        const value = chip.dataset.value;
         const isActive = chip.classList.contains("is-active");
 
         document
@@ -71,10 +129,19 @@
           .forEach((c) => c.classList.remove("is-active"));
 
         if (isActive) {
-          state[group] = null;
+          if (group === "stimmung") {
+            state.stimmungTags = null;
+            state.stimmungLabel = null;
+          } else {
+            state[group] = null;
+          }
         } else {
           chip.classList.add("is-active");
-          state[group] = value;
+          if (group === "stimmung") {
+            waehleStimmung(chip);
+          } else {
+            state[group] = chip.dataset.value;
+          }
         }
 
         ctaButton.disabled = !state.wer;
@@ -117,9 +184,14 @@
     return false;
   }
 
+  function matchesStimmung(entry) {
+    if (!state.stimmungTags) return true;
+    return (entry.stimmung || []).some((s) => state.stimmungTags.includes(normalize(s)));
+  }
+
   function matchesFilter(entry) {
     if (state.wer && !(entry.passend_fuer || []).includes(state.wer)) return false;
-    if (state.stimmung && !(entry.stimmung || []).includes(state.stimmung)) return false;
+    if (!matchesStimmung(entry)) return false;
     return true;
   }
 
@@ -167,7 +239,7 @@
 
     let title = 'Treffer für „' + state.suche.trim() + '“';
     if (state.wer) title += " · " + WER_LABELS[state.wer];
-    if (state.stimmung) title += " · " + state.stimmung;
+    if (state.stimmungLabel) title += " · " + state.stimmungLabel;
     resultsTitle.textContent = title;
 
     stack.innerHTML = "";
@@ -175,12 +247,13 @@
 
     emptySection.hidden = true;
     resultsSection.hidden = false;
+    resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function score(entry) {
     if (!(entry.passend_fuer || []).includes(state.wer)) return -1;
     let s = 1;
-    if (state.stimmung && (entry.stimmung || []).includes(state.stimmung)) s += 2;
+    if (matchesStimmung(entry) && state.stimmungTags) s += 2;
     return s;
   }
 
@@ -203,7 +276,7 @@
     resultsTitle.textContent =
       "Für dich: " +
       WER_LABELS[state.wer] +
-      (state.stimmung ? " · " + state.stimmung : "");
+      (state.stimmungLabel ? " · " + state.stimmungLabel : "");
 
     stack.innerHTML = "";
     top.forEach((entry) => stack.appendChild(renderCard(entry)));
@@ -319,11 +392,15 @@
 
   function reset() {
     state.wer = null;
-    state.stimmung = null;
+    state.stimmungTags = null;
+    state.stimmungLabel = null;
     state.suche = "";
     searchActive = false;
     searchInput.value = "";
     document.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-active"));
+    detailChipsSichtbar = false;
+    stimmungChipsDetail.hidden = true;
+    mehrAnzeigenBtn.textContent = "+ mehr Stimmungen anzeigen";
     ctaButton.disabled = true;
     resultsSection.hidden = true;
     emptySection.hidden = true;

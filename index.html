@@ -32,6 +32,7 @@
       </svg>
       <input type="text" id="search-input" class="search-input" placeholder="Wonach suchst du? (z. B. Grüttpark, Hundewiese, Bar...)" autocomplete="off">
     </div>
+    <p class="search-hint">...oder direkt nach einem Ort suchen. Für Vorschläge nach Stimmung geht's weiter unten.</p>
   </section>
 
   <section class="picker" id="picker">
@@ -50,8 +51,12 @@
 
     <div class="picker-group">
       <span class="picker-label">Wonach ist dir?</span>
-      <div class="chip-row" id="stimmung-chips">
-        <!-- wird per JS aus den Daten befüllt -->
+      <div class="chip-row" id="stimmung-chips-main">
+        <!-- wird per JS befüllt: 8 kuratierte Hauptkategorien -->
+      </div>
+      <button type="button" class="mehr-link" id="mehr-anzeigen-btn">+ mehr Stimmungen anzeigen</button>
+      <div class="chip-row" id="stimmung-chips-detail" hidden>
+        <!-- wird per JS aus den Daten befüllt: alle Detail-Tags -->
       </div>
     </div>
 
